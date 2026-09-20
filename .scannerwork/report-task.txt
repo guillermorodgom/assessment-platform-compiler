@@ -1,0 +1,6 @@
+projectKey=assessment-platform-compiler
+serverUrl=http://localhost:9000
+serverVersion=26.9.0.129388
+dashboardUrl=http://localhost:9000/dashboard?id=assessment-platform-compiler
+ceTaskId=0755c0cb-0a2e-48b5-8ac8-f6ee15fef819
+ceTaskUrl=http://localhost:9000/api/ce/task?id=0755c0cb-0a2e-48b5-8ac8-f6ee15fef819

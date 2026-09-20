@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+judge0:
+  url: https://judge0-ce.p.rapidapi.com
+  api-key: ${JUDGE0_API_KEY:}
+  timeout: 30000
+
+logging:
+  level:
+    root: INFO
+    com.assessment: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} — %msg%n"
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
