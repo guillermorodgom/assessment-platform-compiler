@@ -1,9 +1,8 @@
-name: CI - Backend 🚀
+# Copiar a .github/workflows/ci.yml en cada repo backend (auth, mngr, compiler)
+name: CI - Backend
 
 on:
   push:
-    branches: [develop, 'feature/**']
-  pull_request:
     branches: [main]
 
 jobs:
@@ -22,7 +21,7 @@ jobs:
 
   trigger-deploy:
     needs: build
-    if: github.event.pull_request.merged == true
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Trigger deploy in infra
